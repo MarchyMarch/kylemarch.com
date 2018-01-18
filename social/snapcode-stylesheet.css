@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.snapcode-page
+{
+	background-image: linear-gradient(to bottom right, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+}
+
+.snapcode-img
+{
+	position: relative;
+	height: 45vw;
+	padding: 3em 25%;
+}

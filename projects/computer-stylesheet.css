@@ -1,0 +1,1122 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,
+html *
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------- Header, Logo, and Nav Bar ------------------------*/
+/*-----------------------------------------------------------------------*/
+
+header
+{
+	background-color: aqua;
+	width: 100%;
+	top: 0px;
+	padding: .5em;
+	position: fixed;
+	z-index: 1000;
+}
+
+#logo
+{
+	height: 50px;
+	vertical-align: middle;
+	float: left;
+}
+
+.toggle-nav
+{
+	display: none;
+}
+
+.nav-bar
+{
+	display: block;
+	float: none;
+	overflow: hidden;
+}
+
+.active
+{
+	font-size: 20px;
+	display: inline;
+	list-style: none;
+	float: right;
+}
+
+.nav-category
+{
+	display: inline-block;
+	float: right;
+}
+
+.nav-category a
+{
+	display: block;
+	color: black;
+	font-size: 20px;
+	font-family: Trebuchet MS, Gothic;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav-category a:hover
+{
+	background-color: blueviolet;
+}
+
+/* TODO: add parameters for smaller screens */
+
+/*-----------------------------------------------------------------------*/
+/*------------------------------ Title ----------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.title-section
+{
+	padding-top: 14em;
+	height: 30em;
+}
+
+.title-div h1
+{
+	font-family: Impact, Gothic;
+	font-size: 5em;
+	letter-spacing: .1em;
+	text-align: center;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .30);
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------- Parts Section ------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.parts-section
+{
+	padding-top: 4em;
+	padding-bottom: 4em;
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+
+.parts-pic
+{
+	width: 50%;
+}
+
+.parts-pic img
+{
+	width: 22em;
+	margin-right: 1.5em;
+	border-radius: 6px;
+	float: right;
+}
+
+.parts-description
+{
+	width: 50%;
+	padding-top: 7em;
+	margin-left: 1.5em;
+	float: left;
+}
+
+.parts-description h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+}
+
+.parts-description p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+}
+
+/*-----------------------------------------------------------------------*/
+/*------------------------ Start of Install -----------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.start-install-section
+{
+	width: 100%;
+	display: flex;
+	position: relative;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.start-install-description
+{
+	width: 50%;
+	padding-top: 7em;
+	margin-right: 1.5em;
+	padding-left: 5em;
+	float: right;
+}
+
+.start-install-description h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+	text-align: right;
+}
+
+.start-install-description p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+	text-align: right;
+}
+
+.start-install-pic
+{
+	width: 50%;
+}
+
+.start-install-pic img
+{
+	width: 21.7em;
+	border-radius: 6px;
+	margin-left: 1.5em;
+	float: left;
+}
+
+/*-----------------------------------------------------------------------*/
+/*------------------------ Seated the CPU -------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.cpu-seated-section
+{
+	width: 100%;
+	display: flex;
+	position: relative;
+	padding: 5em 0em;
+}
+
+.cpu-seated-front-pic
+{
+	width: 33%;
+	padding-left: 5em;
+	margin-right: 1.5em;	
+}
+
+.cpu-seated-front-pic img
+{
+	width: 22em;
+	border-radius: 6px;
+	float: right;
+}
+
+.cpu-seated-description
+{
+	width: 33%;
+	padding-top: 9em;
+	margin: 0em 1.5em;
+}
+
+.cpu-seated-description h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+	text-align: center;
+}
+
+.cpu-seated-description p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+	text-align: center;
+}
+
+.cpu-seated-angled
+{
+	width: 33%;
+	margin-left: 1.5em;
+}
+
+.cpu-seated-angled img
+{
+	width: 21.6em;
+	border-radius: 6px;
+	float: left;
+}
+
+/*-----------------------------------------------------------------------*/
+/*----------------------- Adding More Parts -----------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.more-parts-section
+{
+	width: 100%;
+	display: flex;
+	position: relative;
+	padding: 5em 0em;
+}
+
+.more-parts-pic
+{
+	width: 50%;
+	margin-right: 1.5em;
+}
+
+.more-parts-pic img
+{
+	width: 52em;
+	border-radius: 6px;
+	float: right;
+}
+
+.more-parts-description
+{
+	width: 50%;
+	padding-top: 8em;
+	margin-left: 1.5em;
+	padding-right: 5em;
+	float: left;
+}
+
+.more-parts-description h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+}
+
+.more-parts-description p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+}
+
+/*-----------------------------------------------------------------------*/
+/*------------------------ Fully Assembled ------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.fully-assembled-section
+{
+	width: 100%;
+	display: flex;
+	position: relative;
+	padding: 5em 0em;
+}
+
+.fully-assembled-description
+{
+	width: 50%;
+	padding-top: 3em;
+	margin-right: 1.5em;
+	padding-left: 5em;
+	float: right;
+}
+
+.fully-assembled-description h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+	text-align: right;
+}
+
+.fully-assembled-description p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+	text-align: right;
+}
+
+.fully-assembled-pic
+{
+	width: 50%;
+	margin-left: 1.5em;
+}
+
+.fully-assembled-pic img
+{
+	width: 52em;
+	border-radius: 6px;
+	float: left;
+}
+
+/*-----------------------------------------------------------------------*/
+/*------------------------- IT'S ALIVE! ---------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.alive-section
+{
+	width: 100%;
+	display: flex;
+	position: relative;
+	padding: 5em 0em;
+}
+
+.alive-pic
+{
+	width: 33%;
+	margin-right: 1.5em;
+	margin-left: 1.5em;
+	margin-top: 2.25em;
+}
+
+.alive-pic img
+{
+	height: 22em;
+	border-radius: 6px;
+	float: right;
+}
+
+.alive-description
+{
+	width: 33%;
+	margin: 0em 1.5em;
+}
+
+.alive-description h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+	text-align: center;
+}
+
+.alive-description p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+	text-align: center;
+}
+
+.alive-fully-running-pic
+{
+	width: 33%;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-top: 2.25em;
+}
+
+.alive-fully-running-pic img
+{
+	height: 22em;
+	border-radius: 6px;
+	float: left;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------- Booting Up ---------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.boot-section
+{
+	width: 100%;
+	display: flex;
+	position: relative;
+	padding: 10em 0em 5em;
+}
+
+.boot-bios-pic
+{
+	width: 33%;
+	margin: 0em 1.5em;
+}
+
+.boot-bios-pic img
+{
+	height: 22em;
+	border-radius: 6px;
+	float: right;
+}
+
+.boot-description
+{
+	width: 33%;
+	margin: 0em 1.5em;
+	padding-top: 3em;
+}
+
+.boot-description h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+	text-align: center;
+}
+
+.boot-description p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+	text-align: center;
+}
+
+.boot-windows-pic
+{
+	width: 33%;
+	margin: 0em 1.5em;
+}
+
+.boot-windows-pic img
+{
+	height: 22em;
+	border-radius: 6px;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------- Assembled ----------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.assembled-section
+{
+	width: 100%;
+	position: relative;
+	padding: 5em 0em;
+}
+
+.assembled-section h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+	text-align: center;
+}
+
+.assembled-article
+{
+	display: flex;
+	padding: 3em 0em;
+}
+
+.assembled-full-pic
+{
+	width: 40%;
+}
+
+.assembled-full-pic img
+{
+	height: 28vw;
+	border-radius: 6px;
+	float: right;
+	margin: 0em 1.5vw;
+}
+
+.assembled-front-pic
+{
+	width: 20%;
+}
+
+.assembled-front-pic img
+{
+	height: 28vw;
+	border-radius: 6px;
+	display: block;
+	margin: 0 auto;
+}
+
+.assembled-clear-side
+{
+	width: 40%;
+}
+
+.assembled-clear-side img
+{
+	height: 28vw;
+	border-radius: 6px;
+	float: left;
+	margin-left: 1.5vw;
+}
+
+/*-----------------------------------------------------------------------*/
+/*--------------------------- Upgrades ----------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.upgrades-section
+{
+	width: 100%;
+	position: relative;
+	display: flex;
+	padding: 5em 0em;
+}
+
+.upgrades-pic
+{
+	width: 50%;
+	margin-right: 1.5em;
+}
+
+.upgrades-pic img
+{
+	width: 50em;
+	border-radius: 6px;
+	float: right;
+}
+
+.upgrades-description
+{
+	width: 50%;
+	margin-left: 1.5em;
+	padding-top: 7em;
+}
+
+.upgrades-description h1
+{
+	font-family: Impact, Gothic;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-bottom: .5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+	text-align: left;
+}
+
+.upgrades-description p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	line-height: 1.5em;
+	text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+	text-align: left;
+}
+
+/*-----------------------------------------------------------------------*/
+/*---------------------------- Footer -----------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+footer
+{
+	margin-top: -3.5em;
+	padding-top: 10em;
+	background-image: linear-gradient(to bottom, white 30%, aqua 100%);
+}
+
+.footer-content
+{
+	width: 100%;
+	height: 5.2vw;
+	padding-bottom: 0;
+}
+
+.social-grouping
+{
+	display: inline;
+	width: 70%;
+	list-style-type: none;
+}
+
+.social-grouping li
+{
+	display: inline;
+	float: right;
+	vertical-align: middle;
+	margin: 0em 1.2em;
+}
+
+.social-grouping li a
+{
+	line-height: 3em;
+	display: inline;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.social-grouping li a:hover
+{
+	
+}
+
+.social-grouping li a img
+{
+	width: auto;
+	height: 4em;
+	vertical-align: middle;
+}
+
+.social-grouping li a .social-hover
+{
+	display: none;
+}
+
+.social-grouping li a:hover .social-default
+{
+	display: none;
+}
+
+.social-grouping li a:hover .social-hover
+{
+	display: inline;
+}
+
+.footer-info p
+{
+	font-family: Trebuchet MS, Gothic;
+	font-weight: 100;
+	text-align: left;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 8px rgba(0, 255, 255, .75);
+	letter-spacing: .5em;
+	padding-left: 2em;
+	line-height: 1.5;
+}
+
+/*-----------------------------------------------------------------------*/
+/*------------------ CSS For Mobile and Small Screens -------------------*/
+/*-----------------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 700px)
+{
+	/*-------------------------------------------------------------------*/
+	/*---------------------- Mobile Header ------------------------------*/
+	/*-------------------------------------------------------------------*/
+
+	#logo
+	{
+		height: 8vw;
+		display: block;
+		float: left;
+	}
+	
+	.nav-bar
+	{
+		width: 100%;
+		position: relative;
+		display: inline-block;
+		z-index: 1000;
+	}	
+	
+	.nav-bar ul.categories
+	{
+		display: none;
+	}
+	
+	.nav-bar ul.categories
+	{
+		width: 100%;
+		position: absolute;
+		list-style: none;
+		top: 120%;
+		left: 0px;
+		padding: 1.5vw 0vw 1.5vw 3vw;
+		box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+		border-radius: 3px;
+		background: aqua;
+	}
+	
+	.nav-bar ul:after
+	{
+		width: 0px;
+		height: 0px;
+		position: relative;
+		display: block;
+		font-size: 4.5vw;
+		top: 120%;
+		left: 1.2vw;
+		content: '';
+		transform: translate(0%, 100%);
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px aqua;
+		z-index: 1000;
+	}
+	
+	.nav-bar li
+	{
+		width: 100%;
+		margin: .25vw 0vw;
+		position: relative;
+		display: block;
+		float: none;
+		font-size: 1.5vw;
+	}
+	
+	.nav-bar a
+	{
+		display: inline-block;
+		z-index: 1000;
+	}
+	
+	.toggle-nav
+	{
+		padding: 1.5vw;
+		float: right;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: .5vw;
+		margin-right: 3vw;
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+		border-radius: 3px;
+		background: #181818;
+		text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+		color: aqua;
+		font-size: 4vw;
+		transition: color linear 0.15s;
+		text-decoration: none;
+	}
+	
+	.toggle-nav:hover, .toggle-nav.categories
+	{
+		text-decoration: none;
+		background: #303030;
+	}
+	
+	/*-------------------------------------------------------------------*/
+	/*----------------------------- Title -------------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.title-section 
+	{
+		padding-top: 28vw;
+		height: 70vw;
+	}
+
+	.title-div h1
+	{
+		font-family: Impact, Gothic;
+		font-size: 10vw;
+		letter-spacing: .1em;
+		text-align: center;
+		text-shadow: 0px 0px 6px rgba(255, 0, 128, .30);
+	}
+
+	/*-------------------------------------------------------------------*/
+	/*------------------------- List of Parts ---------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	
+	.parts-section
+	{
+		width: 100%;
+		position: relative;	
+		padding-top: 8vw;
+		padding-bottom: 8vw;
+		overflow: hidden;
+	}
+	
+	.parts-article
+	{
+		display: block;
+	}
+
+	.parts-pic
+	{
+		width: 75%;
+		position: relative;
+	}
+
+	.parts-pic img
+	{
+		width: 50vw;
+		border-radius: 6px;
+		position: relative;
+		display: block;
+		margin: auto;
+	}
+
+	.parts-description
+	{
+		width: 100%;
+		padding-top: 15vw;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.parts-description h1
+	{
+		font-family: Impact, Gothic;
+		font-size: 8vw;
+		letter-spacing: .1em;
+		padding-bottom: .5em;
+		text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+		text-align: center;
+	}
+
+	.parts-description p
+	{
+		font-family: Trebuchet MS, Gothic;
+		font-size: 3.2vw;
+		letter-spacing: .05em;
+		line-height: 1.5em;
+		text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+		text-align: center;
+	}
+	
+	/*-------------------------------------------------------------------*/
+	/*-------------------- The Installation Starts ----------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.start-install-section
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding-top: 5vw;
+		padding-bottom: 5vw;
+		overflow: hidden;
+	}
+
+	.start-install-description
+	{
+		width: 100%;
+		padding-top: 7vw;
+		padding-bottom: 8vw;
+		text-align: center;
+	}
+
+	.start-install-description h1
+	{
+		font-family: Impact, Gothic;
+		font-size: 8vw;
+		letter-spacing: .1em;
+		padding-bottom: .5em;
+		text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+		text-align: center;
+	}
+
+	.start-install-description p
+	{
+		font-family: Trebuchet MS, Gothic;
+		font-size: 3vw;
+		letter-spacing: .05em;
+		line-height: 1.5em;
+		text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+		text-align: center;
+	}
+
+	.start-install-pic
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.start-install-pic img
+	{
+		width: 60vw;
+		border-radius: 6px;
+		margin: 0 auto;
+	}
+	
+	/*-------------------------------------------------------------------*/
+	/*------------------------ Seated the CPU ---------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.cpu-seated-section
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding: 5vw 0vw;
+		overflow: hidden;
+	}
+
+	.cpu-seated-front-pic
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cpu-seated-front-pic img
+	{
+		width: 60vw;
+		border-radius: 6px;
+		margin: 0 auto;
+	}
+
+	.cpu-seated-description
+	{
+		width: 100%;
+		padding-top: 10vw;
+		padding-bottom: 10vw;
+		margin: 0vw 1.5vw;
+	}
+
+	.cpu-seated-description h1
+	{
+		font-family: Impact, Gothic;
+		font-size: 8vw;
+		letter-spacing: .1em;
+		padding-bottom: .5em;
+		text-shadow: 0px 0px 6px rgba(255, 0, 128, .25);
+		text-align: center;
+	}
+
+	.cpu-seated-description p
+	{
+		font-family: Trebuchet MS, Gothic;
+		font-size: 3vw;
+		letter-spacing: .05em;
+		line-height: 1.5em;
+		text-shadow: 0px 0px 6px rgba(255, 0, 128, .2);
+		text-align: center;
+	}
+
+	.cpu-seated-angled
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cpu-seated-angled img
+	{
+		width: 55vw;
+		border-radius: 6px;
+		margin: 0 auto;
+	}
+
+	
+	/*-------------------------------------------------------------------*/
+	/*----------------------- Adding More Parts -------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	/*-------------------------------------------------------------------*/
+	/*------------------------- Fully Assembled -------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	/*-------------------------------------------------------------------*/
+	/*--------------------------- IT'S ALIVE ----------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	/*-------------------------------------------------------------------*/
+	/*--------------------------- Booting Up ----------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	/*-------------------------------------------------------------------*/
+	/*--------------------------- Assembled -----------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	/*-------------------------------------------------------------------*/
+	/*---------------------------- Upgrades -----------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	/*-------------------------------------------------------------------*/
+	/*------------------------------ Footer -----------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	footer
+	{
+		margin-top: 0vh;
+		padding-top: 20vw;
+		background-image: linear-gradient(to bottom, white 30%, aqua 100%);
+	}
+
+	.footer-content
+	{
+		width: 100%;
+		height: auto;
+		padding-bottom: 4vw;
+		display: block;
+		text-align: center;
+	}
+	
+	
+	.footer-info p
+	{
+		font-family: Trebuchet MS, Gothic;
+		font-weight: 100;
+		text-align: left;
+		text-transform: uppercase;
+		text-shadow: 0px 0px 8px rgba(0, 255, 255, .75);
+		letter-spacing: .5em;
+		line-height: 1.5;
+		font-size: 2.1vw;
+	}
+
+	.social-grouping
+	{
+		margin-top: -4vw;
+		margin-bottom: 10vw;
+		display: inline-flex;
+		width: 80%;
+		list-style-type: none;
+	}
+
+	.social-grouping li
+	{
+		width: 60%;
+		display: block;
+	}
+
+	.social-grouping li a
+	{
+		
+	}
+
+	.social-grouping li a:hover
+	{
+
+	}
+
+	.social-grouping li a img
+	{
+		width: auto;
+		height: 15vw;
+		vertical-align: middle;
+	}
+
+	.social-grouping li a .social-hover
+	{
+		display: none;
+	}
+
+	.social-grouping li a:hover .social-default
+	{
+		display: none;
+	}
+
+	.social-grouping li a:hover .social-hover
+	{
+		display: inline;
+	}
+}

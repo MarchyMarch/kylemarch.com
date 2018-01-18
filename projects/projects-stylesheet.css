@@ -1,0 +1,509 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,
+html *
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------- Header, Logo, and Nav Bar ------------------------*/
+/*-----------------------------------------------------------------------*/
+
+header
+{
+	background-color: aqua;
+	width: 100%;
+	top: 0px;
+	padding: .5em;
+	position: fixed;
+	z-index: 1000;
+}
+
+#logo
+{
+	height: 50px;
+	vertical-align: middle;
+	float: left;
+}
+
+.toggle-nav
+{
+	display: none;
+}
+
+.nav-bar
+{
+	display: block;
+	float: none;
+	overflow: hidden;
+}
+
+.active
+{
+	font-size: 20px;
+	display: inline;
+	list-style: none;
+	float: right;
+}
+
+.nav-category
+{
+	display: inline-block;
+	float: right;
+}
+
+.nav-category a
+{
+	display: block;
+	color: black;
+	font-size: 20px;
+	font-family: Trebuchet MS, Gothic;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav-category a:hover
+{
+	background-color: blueviolet;
+}
+
+/*-----------------------------------------------------------------------*/
+/*----------------------------- Main ------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+main
+{
+	background-image: linear-gradient(to bottom, aqua 0%, black 100%);
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------- Title Section ------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.title-section
+{
+	padding: 9vw 0vw 7vw 0vw;
+	width: 100%;
+	position: relative;
+}
+
+.title-text
+{
+	text-align: center;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 6em;
+	text-shadow: 1px 0px 6px rgba(128, 0, 255, .5);
+}
+
+/*-----------------------------------------------------------------------*/
+/*----------------------------- Line Zero -------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.line-zero
+{
+	width: 100%;
+	display: flex;
+	position: relative;
+	padding: 0em 0em 10em 0em;
+	overflow: hidden;
+}
+
+.pic-left
+{
+	width: 33%;
+}
+
+.pic-left img
+{
+	width: 30vw;
+	margin-left: 1.6vw;
+	margin-right: 1.5vw;
+	align-content: center;
+	border-radius: 10px;
+}
+
+.pic-mid
+{
+	width: 33%;
+}
+
+.pic-mid img
+{
+	width: 30vw;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+	align-content: center;
+	border-radius: 10px;
+}
+
+.right-pic
+{
+	width:33%;
+}
+
+.right-pic img
+{
+	width: 30vw;
+	margin-right: 5vw;
+	margin-left: 2vw;
+	align-content: center;
+	border-radius: 10px;
+}
+
+/*-----------------------------------------------------------------------*/
+/*---------------------------- Footer -----------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+footer
+{
+	margin-top: -3.5em;
+	padding-top: 10em;
+	background-image: linear-gradient(to bottom right, black 0%, aqua 100%);
+}
+
+.footer-content
+{
+	width: 100%;
+	height: 5.2vw;
+	padding-bottom: 0;
+}
+
+.social-grouping
+{
+	display: inline;
+	width: 70%;
+	list-style-type: none;
+}
+
+.social-grouping li
+{
+	display: inline;
+	float: right;
+	vertical-align: middle;
+	margin: 0em 1.2em;
+}
+
+.social-grouping li a
+{
+	line-height: 3em;
+	display: inline;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.social-grouping li a:hover
+{
+	
+}
+
+.social-grouping li a img
+{
+	width: auto;
+	height: 4em;
+	vertical-align: middle;
+}
+
+.social-grouping li a .social-hover
+{
+	display: none;
+}
+
+.social-grouping li a:hover .social-default
+{
+	display: none;
+}
+
+.social-grouping li a:hover .social-hover
+{
+	display: inline;
+}
+
+.footer-info p
+{
+	font-family: gotham, sans-serif;
+	font-weight: 100;
+	text-align: left;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 8px rgba(0, 255, 255, .75);
+	letter-spacing: .5em;
+	padding-left: 2em;
+	line-height: 1.5;
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*------------------ CSS For Mobile and Small Screens -------------------*/
+/*-----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 700px)
+{
+	
+	/*-------------------------------------------------------------------*/
+	/*---------------------- Mobile Header ------------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	#logo
+	{
+		height: 8vw;
+		display: block;
+		float: left;
+	}
+	
+	.nav-bar
+	{
+		width: 100%;
+		position: relative;
+		display: inline-block;
+		z-index: 1000;
+	}	
+	
+	.nav-bar ul.categories
+	{
+		display: none;
+	}
+	
+	.nav-bar ul.categories
+	{
+		width: 100%;
+		position: absolute;
+		list-style: none;
+		top: 120%;
+		left: 0px;
+		padding: 1.5vw 0vw 1.5vw 3vw;
+		box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+		border-radius: 3px;
+		background: aqua;
+	}
+	
+	.nav-bar ul:after
+	{
+		width: 0px;
+		height: 0px;
+		position: relative;
+		display: block;
+		font-size: 4.5vw;
+		top: 120%;
+		left: 1.2vw;
+		content: '';
+		transform: translate(0%, 100%);
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px aqua;
+		z-index: 1000;
+	}
+	
+	.nav-bar li
+	{
+		width: 100%;
+		margin: .25vw 0vw;
+		position: relative;
+		display: block;
+		float: none;
+		font-size: 1.5vw;
+	}
+	
+	.nav-bar a
+	{
+		display: inline-block;
+		z-index: 1000;
+	}
+	
+	.toggle-nav
+	{
+		padding: 1.5vw;
+		float: right;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: .5vw;
+		margin-right: 3vw;
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+		border-radius: 3px;
+		background: #181818;
+		text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+		color: aqua;
+		font-size: 4vw;
+		transition: color linear 0.15s;
+		text-decoration: none;
+	}
+	
+	.toggle-nav:hover, .toggle-nav.categories
+	{
+		text-decoration: none;
+		background: #303030;
+	}
+	
+	/*-------------------------------------------------------------------*/
+	/*----------------------------- Main --------------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	main
+	{
+		background-image: linear-gradient(to bottom, aqua 0%, black 85%);
+	}
+	
+	/*-------------------------------------------------------------------*/
+	/*------------------------- Title Section ---------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.title-section
+	{
+		padding: 20vw 0vw 7vw 0vw;
+		width: 100%;
+		position: relative;
+	}
+
+	.title-text
+	{
+		width: inherit;
+		text-align: center;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		text-transform: uppercase;
+		font-size: 15vw;
+		text-shadow: 1px 0px 6px rgba(128, 0, 255, .5);
+	}
+	
+	/*-------------------------------------------------------------------*/
+	/*---------------------------- Line Zero ----------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.line-zero
+	{
+		width: 100%;
+		display: block;
+		position: relative;
+		padding: 0em 0em 15vw 0em;
+		overflow: hidden;
+	}
+
+	.pic-left
+	{
+		width: 100%;
+		padding: 4vw 0vw 3vw;
+	}
+
+	.pic-left img
+	{
+		width: 70vw;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.pic-mid
+	{
+		width: 100%;
+		padding: 3vw 0vw;
+	}
+
+	.pic-mid img
+	{
+		width: 70vw;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.right-pic
+	{
+		width: 100%;
+		padding: 3vw 0vw;
+	}
+
+	.right-pic img
+	{
+		width: 70vw;
+		display: block;
+		margin: 0 auto;
+	}
+
+	
+	/*-------------------------------------------------------------------*/
+	/*------------------------------ Footer -----------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	footer
+	{
+		margin-top: 0vh;
+		padding-top: 20vw;
+		background-image: linear-gradient(to bottom, black 0%, aqua 100%);
+	}
+
+	.footer-content
+	{
+		width: 100%;
+		height: auto;
+		padding-bottom: 4vw;
+		display: block;
+		text-align: center;
+	}
+	
+	
+	.footer-info p
+	{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		font-family: gotham, sans-serif;
+		font-weight: 100;
+		text-transform: uppercase;
+		text-shadow: 0px 0px 8px rgba(128, 0, 255, .25);
+		letter-spacing: .4vw;
+		padding-left: 1.75vw;
+		line-height: 1.25vw;
+		font-size: 3vw;
+	}
+
+	.social-grouping
+	{
+		margin-top: -4vw;
+		margin-bottom: 10vw;
+		display: inline-flex;
+		width: 80%;
+		list-style-type: none;
+	}
+
+	.social-grouping li
+	{
+		width: 60%;
+		display: block;
+	}
+
+	.social-grouping li a
+	{
+		
+	}
+
+	.social-grouping li a:hover
+	{
+
+	}
+
+	.social-grouping li a img
+	{
+		width: auto;
+		height: 15vw;
+		vertical-align: middle;
+	}
+
+	.social-grouping li a .social-hover
+	{
+		display: none;
+	}
+
+	.social-grouping li a:hover .social-default
+	{
+		display: none;
+	}
+
+	.social-grouping li a:hover .social-hover
+	{
+		display: inline;
+	}
+}

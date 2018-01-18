@@ -1,0 +1,837 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,
+html *
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1vw;
+	background: white;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------- Header, Logo, and Nav Bar ------------------------*/
+/*-----------------------------------------------------------------------*/
+
+header
+{
+	background-color: aqua;
+	width: 100%;
+	height: auto;
+	top: 0px;
+	padding: .5em;
+	position: fixed;
+	z-index: 1000;
+}
+
+#logo
+{
+	height: 50px;
+	vertical-align: middle;
+	float: left;
+}
+
+.toggle-nav
+{
+	display: none;
+}
+
+.nav-bar
+{
+	display: block;
+	float: none;
+	overflow: hidden;
+}
+
+.active
+{
+	font-size: 20px;
+	display: inline;
+	list-style: none;
+	float: right;
+}
+
+.nav-category
+{
+	display: inline-block;
+	float: right;
+}
+
+.nav-category a
+{
+	display: block;
+	color: black;
+	font-size: 20px;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav-category a:hover
+{
+	background-color: blueviolet;
+}
+
+/* TODO: add parameters for smaller screens */
+
+/*-----------------------------------------------------------------------*/
+/*--------------------- Title and Picture -------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.intro
+{
+	padding-top: 4em;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: black;
+}
+
+.intro-article
+{
+	display: inline;
+}
+
+.intro .intro-text
+{
+	width: 100%;
+	text-align: center;
+	padding: 5em 3em;
+}
+
+.intro .intro-text-header
+{
+	color: aqua;
+	font-size: 3em;
+	font-family: Gotham;
+	text-shadow: 0px 0px 8px rgba(0, 128, 255, .75);
+}
+
+.intro .intro-pic
+{
+	width: 100%;
+	padding: 0em 2em 5em;
+}
+
+.intro-pic figure
+{
+	position: relative;
+}
+
+.intro-pic figure img
+{
+	position: relative;
+	height: 30vw;
+	display: block;
+	margin: auto;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------- About Section ------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.about-section
+{
+	padding-top: 0em;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.about-article
+{
+	display: flex;
+	height: 40vw;
+}
+
+.about-article .about-picture
+{
+	padding: 0;
+	width: 50%;
+}
+
+.about-picture figure
+{
+	position: relative;
+}
+
+.about-picture figure img
+{
+	width: 25em;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	padding: 6em 0em;
+	margin-left: 11em;
+}
+
+.about-article .about-text
+{
+	width: 50%;
+	background: aqua;
+	background-image: linear-gradient(to bottom right, black 0%, aqua 85%); 
+}
+
+.about-title
+{
+	text-transform: uppercase;
+	font-size: 3em;
+	letter-spacing: .1em;
+	margin-bottom: 2%;
+	margin-top: 25%;
+	text-align: center;
+	text-shadow: 0px 0px 8px rgba(0, 255, 255, .6);
+}
+
+.about-paragraph
+{
+	font-size: 1.2em;
+	letter-spacing: .05em;
+	margin-top: 7%;
+	margin-bottom: 5%;
+	line-height: 1.5em;
+	text-align: center;
+	padding: 0em 2.5em;
+	text-shadow: 0px 0px 6px rgba(0, 255, 255, .25);
+}
+.about-more
+{
+	font-size: 1.1em;
+	text-align: center;
+	letter-spacing: .025em;
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*--------------------------- Projects Section --------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.projects-section
+{
+	width: 100%;
+	position: relative;
+	background-image: linear-gradient(to bottom, aqua 10%, black 100%);
+}
+
+.projects-title
+{
+	text-align: center;
+	font-family: Gotham;
+	font-size: 3em;
+	letter-spacing: .1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-shadow: 0px 0px 8px rgba(128, 0, 255, .3);
+}
+
+.projects-article
+{
+	display: flex;
+	padding-top: 0em;
+	padding-bottom: 4em;
+}
+
+.projects-img-left
+{
+	width: 33%;
+	
+}
+
+.projects-img-left img
+{
+	width: 30vw;
+	margin-left: 1.6vw;
+	margin-right: 1.5vw;
+	align-content: center;
+}
+
+.projects-img-middle
+{
+	width: 33%;
+}
+
+.projects-img-middle img
+{
+	width: 30vw;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+	align-content: center;
+}
+
+.projects-img-right
+{
+	width: 33%;
+}
+
+.projects-img-right img
+{
+	width: 30vw;
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+	align-content: center;
+}
+
+/*-----------------------------------------------------------------------*/
+/*-------------------- Personal Interests Section -----------------------*/
+/*-----------------------------------------------------------------------*/
+
+.interests-section
+{
+	padding-top: 3em;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: black;
+}
+
+.interests-article
+{
+	display: flex;
+}
+
+.interests-text
+{
+	width: 50%;
+}
+
+.interests-text img
+{
+	width: 40.5em;
+	margin: 5em;
+}
+
+.interests-pic
+{
+	width: 50%;
+}
+
+.interests-pic img
+{
+	height: 45em;
+	margin: 3em 5em;
+}
+
+/*-----------------------------------------------------------------------*/
+/*---------------------------- Footer -----------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+footer
+{
+	margin-top: -3.5em;
+	padding-top: 10em;
+	background-image: linear-gradient(to bottom right, black 0%, aqua 100%);
+}
+
+.footer-content
+{
+	width: 100%;
+	height: 5.2vw;
+	padding-bottom: 0;
+}
+
+.social-grouping
+{
+	display: inline;
+	width: 70%;
+	list-style-type: none;
+}
+
+.social-grouping li
+{
+	display: inline;
+	float: right;
+	vertical-align: middle;
+	margin: 0em 1.2em;
+}
+
+.social-grouping li a
+{
+	line-height: 3em;
+	display: inline;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.social-grouping li a:hover
+{
+	
+}
+
+.social-grouping li a img
+{
+	width: auto;
+	height: 4em;
+	vertical-align: middle;
+}
+
+.social-grouping li a .social-hover
+{
+	display: none;
+}
+
+.social-grouping li a:hover .social-default
+{
+	display: none;
+}
+
+.social-grouping li a:hover .social-hover
+{
+	display: inline;
+}
+
+.footer-info p
+{
+	font-family: gotham, sans-serif;
+	font-weight: 100;
+	text-align: left;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 8px rgba(0, 255, 255, .75);
+	letter-spacing: .5em;
+	padding-left: 2em;
+	line-height: 1.5;
+}
+
+/*-----------------------------------------------------------------------*/
+/*------------------ CSS For Mobile and Small Screens -------------------*/
+/*-----------------------------------------------------------------------*/
+
+@media only screen and (max-width: 700px)
+{
+	/*-------------------------------------------------------------------*/
+	/*---------------------- Mobile Header ------------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	#logo
+	{
+		height: 8vw;
+		display: block;
+		float: left;
+	}
+	
+	.nav-bar
+	{
+		width: 100%;
+		position: relative;
+		display: inline-block;
+		z-index: 1000;
+	}	
+	
+	.nav-bar ul.categories
+	{
+		display: none;
+	}
+	
+	.nav-bar ul.categories
+	{
+		width: 100%;
+		position: absolute;
+		list-style: none;
+		top: 120%;
+		left: 0px;
+		padding: 1.5vw 0vw 1.5vw 3vw;
+		box-shadow: 0px 1px 1px rgba(0,0,0,.15);
+		border-radius: 3px;
+		background: aqua;
+	}
+	
+	.nav-bar ul:after
+	{
+		width: 0px;
+		height: 0px;
+		position: relative;
+		display: block;
+		font-size: 4.5vw;
+		top: 120%;
+		left: 1.2vw;
+		content: '';
+		transform: translate(0%, 100%);
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px aqua;
+		z-index: 1000;
+	}
+	
+	.nav-bar li
+	{
+		width: 100%;
+		margin: .25vw 0vw;
+		position: relative;
+		display: block;
+		float: none;
+		font-size: 1.5vw;
+	}
+	
+	.nav-bar a
+	{
+		display: inline-block;
+		z-index: 1000;
+	}
+	
+	.toggle-nav
+	{
+		padding: 1.5vw;
+		float: right;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: .5vw;
+		margin-right: 3vw;
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+		border-radius: 3px;
+		background: #181818;
+		text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+		color: aqua;
+		font-size: 4vw;
+		transition: color linear 0.15s;
+		text-decoration: none;
+	}
+	
+	.toggle-nav:hover, .toggle-nav.categories
+	{
+		text-decoration: none;
+		background: #303030;
+	}	
+	
+	/*-------------------------------------------------------------------*/
+	/*----------------------- Title and Picture -------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.intro
+	{
+		padding-top: 10vw;
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		background: black;
+	}
+
+	.intro-article
+	{
+		display: inline;
+	}
+
+	.intro .intro-text
+	{
+		width: 100%;
+		text-align: center;
+		padding: 5vw 3vw;
+	}
+
+	.intro .intro-text-header
+	{
+		color: aqua;
+		font-size: 8vw;
+		font-family: Gotham;
+		text-shadow: 0px 0px 8px rgba(0, 128, 255, .75);
+	}
+
+	.intro .intro-pic
+	{
+		width: 100%;
+		padding: 0em 0vw 8vw;
+	}
+
+	.intro-pic figure
+	{
+		position: relative;
+	}
+
+	.intro-pic figure img
+	{
+		position: relative;
+		height: 50vw;
+		display: block;
+		margin: auto;
+	}
+	
+	/*-------------------------------------------------------------------*/
+	/*---------------------------- About Section ------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.about-section
+	{
+		padding-top: 0em;
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.about-article
+	{
+		display: flex;
+		height: auto;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.about-article .about-picture
+	{
+		padding: 0;
+		width: 100%;
+		order: 2;
+	}
+
+	.about-picture figure
+	{
+		position: relative;
+		text-align: center;
+	}
+
+	.about-picture figure img
+	{
+		width: 45vw;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.about-article .about-text
+	{
+		width: 100%;
+		height: auto;
+		background: aqua;
+		background-image: linear-gradient(to bottom right, black 0%, aqua 85%);
+		padding-bottom: 8vw;
+	}
+
+	.about-title
+	{
+		text-transform: uppercase;
+		font-size: 8vw;
+		letter-spacing: .1em;
+		margin-bottom: 2%;
+		margin-top: 15%;
+		text-align: center;
+		text-shadow: 0px 0px 8px rgba(0, 255, 255, .6);
+	}
+
+	.about-paragraph
+	{
+		font-size: 3vw;
+		letter-spacing: .05em;
+		margin-top: 7%;
+		margin-bottom: 5%;
+		line-height: 1.5em;
+		text-align: center;
+		padding: 0em 2.5em;
+		text-shadow: 0px 0px 6px rgba(0, 255, 255, .25);
+	}
+	.about-more
+	{
+		font-size: 3vw;
+		text-align: center;
+		letter-spacing: .025em;
+	}
+
+	
+	/*-------------------------------------------------------------------*/
+	/*------------------------ Projects Section -------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.projects-section
+	{
+		width: 100%;
+		position: relative;
+		background-image: linear-gradient(to bottom, aqua 75%, black 100%);
+	}
+
+	.projects-title
+	{
+		text-align: center;
+		font-family: Gotham;
+		font-size: 8vw;
+		letter-spacing: .1em;
+		padding-top: 7vw;
+		padding-bottom: 3vw;
+		text-shadow: 0px 0px 8px rgba(128, 0, 255, .3);
+	}
+
+	.projects-article
+	{
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		padding-top: 0em;
+		padding-bottom: 15vw;
+	}
+
+	.projects-img-left
+	{
+		width: 100%;
+		order: 1;
+	}
+
+	.projects-img-left img
+	{
+		width: 70vw;
+		border-radius: 8px;
+		display: block;
+		margin: 4vw auto;
+	}
+
+	.projects-img-middle
+	{
+		width: 100%;
+		order: 3;
+	}
+
+	.projects-img-middle img
+	{
+		width: 70vw;
+		border-radius: 8px;
+		display: block;
+		margin: 4vw auto;
+	}
+
+	.projects-img-right
+	{
+		width: 100%;
+		order: 2;
+	}
+
+	.projects-img-right img
+	{
+		width: 70vw;
+		border-radius: 8px;
+		display: block;
+		margin: 4vw auto;
+	}
+
+	/*-------------------------------------------------------------------*/
+	/*------------------- Personal Interests Section --------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	.interests-section
+	{
+		padding-top: 0vw;
+		padding-bottom: 15vw;
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		background: black;
+	}
+
+	.interests-article
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.interests-text
+	{
+		width: 100%;
+	}
+
+	.interests-text img
+	{
+		width: 70vw;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.interests-pic
+	{
+		width: 100%;
+	}
+
+	.interests-pic img
+	{
+		height: 90vw;
+		display: block;
+		margin: auto;
+	}
+	
+	/*-------------------------------------------------------------------*/
+	/*------------------------------ Footer -----------------------------*/
+	/*-------------------------------------------------------------------*/
+	
+	footer
+	{
+		margin-top: 0vh;
+		padding-top: 20vw;
+		background-image: linear-gradient(to bottom, black 0%, aqua 100%);
+	}
+
+	.footer-content
+	{
+		width: 100%;
+		height: auto;
+		padding-bottom: 4vw;
+		display: block;
+		text-align: center;
+	}
+	
+	
+	.footer-info p
+	{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		font-family: gotham, sans-serif;
+		font-weight: 100;
+		text-transform: uppercase;
+		text-shadow: 0px 0px 8px rgba(128, 0, 255, .25);
+		letter-spacing: .4vw;
+		padding-left: 1.75vw;
+		font-size: 3vw;
+	}
+
+	.social-grouping
+	{
+		margin-top: -4vw;
+		margin-bottom: 10vw;
+		display: inline-flex;
+		width: 80%;
+		list-style-type: none;
+	}
+
+	.social-grouping li
+	{
+		width: 60%;
+		display: block;
+	}
+
+	.social-grouping li a
+	{
+		
+	}
+
+	.social-grouping li a:hover
+	{
+
+	}
+
+	.social-grouping li a img
+	{
+		width: auto;
+		height: 15vw;
+		vertical-align: middle;
+	}
+
+	.social-grouping li a .social-hover
+	{
+		display: none;
+	}
+
+	.social-grouping li a:hover .social-default
+	{
+		display: none;
+	}
+
+	.social-grouping li a:hover .social-hover
+	{
+		display: inline;
+	}
+}

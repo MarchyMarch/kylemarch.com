@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- IE/Edge Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    
+    <!-- Other Browsers Icon -->
+    <link rel="icon" type="image/png" href="../images/icon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/icon-16.png" sizes="16x16">
+    
+	<title>JavaScript Test</title>
+	<link rel="stylesheet" href="java-script-test-stylesheet.css">
+	<script>
+		function showCage()
+		{
+			window.alert("You are about to summon Nick Cage")
+			document.getElementById("cage").style.visibility = "visible";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="cage-class">
+		<img id="cage" src="../images/test/Vampires-Kiss-Nicolas-Cage.jpg" alt="Wild Cage">
+		<button type="button"
+		onclick="document.getElementById('cage').style.visibility = 'hidden'">Hide Cage</button>
+	</div>
+	<div class="script-tag-test">
+		<button type="button" onClick="showCage()">Summon Cage</button>
+	</div>
+</body>
+</html>

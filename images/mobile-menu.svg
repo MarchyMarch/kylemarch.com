@@ -1,0 +1,9 @@
+<!--Scalable Vector Graphic-->
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"  
+     width="40px" 
+     height="40px">
+	
+	<image xlink:href="../images/menu-al-512.png" x="0" y="0" height="40px" width="40px"/>
+	
+</svg>

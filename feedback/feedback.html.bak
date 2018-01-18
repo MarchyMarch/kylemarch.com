@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+            body
+            {
+              background-color: #c0c0c0
+            }
+          </style>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>feedback</title>
+  </head>
+  <body>
+    <p></p>
+    <form action="feedback.php" method="post" id="tswfbform" accept-charset="UTF-8">
+      <h1> <label for="tswname"></label></h1>
+      <h1 style="text-align: center;">Please Submit Your Feedback</h1>
+      <p style="text-align: center;">All fields are required.</p>
+      <div style="text-align: center;"> <label for="tswname">Name: </label><input
+          name="fullname" style="max-width: 100%;" id="tswname" size="39" type="text"><br>
+        &nbsp;<br>
+        <label for="tswemail">Email: </label><input style="max-width: 100%;" id="tswemail"
+          name="email" size="39" type="text"><br>
+        &nbsp;<br>
+        <label for="tswcomments">Comments:</label><br>
+        &nbsp;<br>
+        <textarea rows="15" cols="45" name="comments" style="max-width: 100%;" id="tswcomments"></textarea><br>
+        &nbsp;<br>
+        <input id="tswsubmit" value="Send Feedback" type="submit"></div> 
+ 
+
+
+
+	
+</form>
+<br>
+    <p></p>
+</body></html>

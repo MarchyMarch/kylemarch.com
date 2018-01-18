@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body
+    {
+      background-color: #c0c0c0
+    }
+  </style>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>thanks</title>
+  </head>
+  <body>
+    <h1 style=" text-align: center;">Thanks for the Feedback</h1>
+    <p style="text-align: center;">You are awesome!</p>
+    <p style="text-align: center;"><a href="http://kylemarch.com">Go Home</a></p>
+    <p style="text-align: center;"><br>
+    </p>
+    
+  </body>
+</html>
